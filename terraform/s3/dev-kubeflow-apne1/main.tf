@@ -1,6 +1,6 @@
 locals {
-  name   = "dev-kubeflow-data-apne2"
-  region = "ap-northeast-2"
+  name   = "dev-kubeflow-data-apne1"
+  region = "ap-northeast-1"
 }
 
 module "dev-data" {
