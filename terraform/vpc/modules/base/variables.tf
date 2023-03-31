@@ -22,6 +22,11 @@ variable "bastion_ingress" {
   type        = list(string)
 }
 
+variable "azs" {
+  type    = list(string)
+  default = ["a", "c"]
+}
+
 variable "bastion_keypair" {
   description = "bastion keypair"
   type        = string

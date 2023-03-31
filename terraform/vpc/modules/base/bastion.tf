@@ -6,7 +6,7 @@ resource "aws_instance" "bastion" {
   count         = var.enable_bastion ? 1 : 0
   ami           = data.aws_ami.ubuntu_ami
   instance_type = "t2.nano"
-  subnet_id     = aws_subnet.public_public_a
+  subnet_id     = aws_subnet.public_public[0].id
   key_name      = var.bastion_keypair
   vpc_security_group_ids = [
     aws_security_group.bastion_sg[count.index].id

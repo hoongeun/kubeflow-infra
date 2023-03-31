@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket         = "kubeflow-tfstate"
-    key            = "dev-apne1/s3/dev-kubeflow-data-apne1/terraform.tfstate"
+    key            = "dev-apne1/eip/dev-kubeflow-nat/terraform.tfstate"
     region         = "ap-northeast-1"
     dynamodb_table = "kubeflow-tflock"
   }

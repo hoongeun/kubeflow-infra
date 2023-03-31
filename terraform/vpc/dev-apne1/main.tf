@@ -1,5 +1,5 @@
 locals {
-  name   = "dev-vpc"
+  name   = "dev-apne1"
   region = "ap-northeast-1"
   env    = "dev"
 }
